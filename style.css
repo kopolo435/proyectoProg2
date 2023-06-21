@@ -1,0 +1,100 @@
+*{
+    margin: 0px;
+}
+body{
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+}
+header{
+    display: flex;
+    justify-content: space-between;
+    padding: 10px 20px;
+    background-color: gray;
+}
+.socialContainer{
+    display: flex;
+    justify-content: flex-start;
+    align-items: flex-end;
+    gap: 10px;
+}
+
+nav {
+    padding: 10px 10px;
+    background-color: aqua;
+}
+
+nav ul{
+    list-style: none;
+    display: flex;
+    gap: 20px;
+    padding: 0px;
+}
+
+li a{
+    text-decoration: none;
+}
+
+main{
+    flex: 1;
+    display: flex;
+    justify-content: center;
+    padding: 20px 0px;
+}
+
+.formContainer{
+    background-color: gray;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 70%;
+    padding: 30px 0px;
+}
+
+.formContainer form{
+    display: flex;
+    flex-direction: column;
+    gap: 30px;
+    justify-content: flex-start;
+    width: 25%;
+    margin: 20px;
+}
+
+form label{
+    display: flex;
+    flex-direction: column;
+    gap: 5px;
+}
+
+form input{
+    border-radius: 20px;
+    padding: 5px 10px;
+    border: none;
+}
+
+
+.radioContainer label{
+    display: flex;
+    flex-direction: row;
+    gap: 10px;
+    margin: 10px;
+}
+
+.formContainer button{
+    border-radius: 20px;
+    border: none;
+    padding: 10px 20px;
+}
+
+footer{
+    display: flex;
+    justify-content: space-between;
+    padding: 10px 20px;
+    background-color: gray;
+}
+
+.footerMenu{
+    display: flex;
+    gap: 10px;
+    list-style: none;
+}
