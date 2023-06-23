@@ -1,3 +1,6 @@
+<%@ page language="java" contentType="text/html; charset=ISO-8859-1"
+    pageEncoding="ISO-8859-1"%>
+<%@page import="java.sql.*" %>
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -6,7 +9,6 @@
     <title>Registro exitoso</title>
 </head>
 <body>
-    
     <header>
         <div class="logoContainer">
             <img src="" alt="Logo de la Pagina">
@@ -41,10 +43,10 @@
     </main>
     <footer>
         <ul class="footerMenu">
-            <li><a href="">Home</a></li>
-            <li><a href="">Curso de Ciencias Naturales</a></li>
-            <li><a href="">Curso de Química y Biología</a></li>
-            <li><a href="">Curso de programación</a></li>
+            <li><a href="home.html">Home</a></li>
+            <li><a href="formNatural.html">Registrarse en el Curso de Ciencias Naturales</a></li>
+            <li><a href="formQuiBio.html">Registrarse en el Curso de Química y Biología</a></li>
+            <li><a href="formProg.html">Registrarse en el Curso de programación</a></li>
             <li><a href="">Referencias</a></li>
             <li><a href="">Contáctanos</a></li>
         </ul>
