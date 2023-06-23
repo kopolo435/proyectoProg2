@@ -60,8 +60,29 @@
     //Declaracion y asignacion de valores a variables que reciben datos del formulario
      String nombre = request.getParameter("nombre"); 
      String cedula = request.getParameter("cedula");
-     String materia = request.getParameter("fecha");
+     String fecha = request.getParameter("fecha");
+     String curso = request.getParameter("curso")
     %>
 
+    <%
+    //Conexion a la base de datos
+    Class.forName("com.mysql.jdbc.Driver");
+    Connection dbconect = DriverManager.getConnection("jdbc:mysql://localhost:3306/asignacion4","root","");
+    Statement dbstatement = dbconect.createStatement();
+    if (curso == "Ciencias Naturales"){
+        String insertarsql = "INSERT INTO CienciasNaturales (nombre,cedula,fecha) 
+        VALUES ('"+nombre+"','"+cedula+"','"+fecha+"')";
+    }
+    else if (curso == "programacion")
+    {
+        String insertarsql = "INSERT INTO Programacion (nombre,cedula,fecha) 
+        VALUES ('"+nombre+"','"+cedula+"','"+fecha+"')";
+    }
+    else{
+        String insertarsql = "INSERT INTO BioloQuimi(nombre,cedula,fecha) 
+        VALUES ('"+nombre+"','"+cedula+"','"+fecha+"')";
+    }
+    dbstatement.executeUpdate(insertarsql);
+    %>
 </body>
 </html>
