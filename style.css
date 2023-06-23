@@ -51,6 +51,15 @@ main{
     padding: 30px 0px;
 }
 
+#confForm{
+    gap: 20px;
+}
+
+#confForm img{
+    width: 200px;
+    height: auto;
+}
+
 .formContainer form{
     display: flex;
     flex-direction: column;
