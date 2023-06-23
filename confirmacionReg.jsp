@@ -39,6 +39,7 @@
     <main>
         <div class="formContainer" id="confForm">
             <h2>Registro exitoso</h2>
+            <img src="img/survey.png" alt="imagen de confirmacion">
             <a href="home.html"><button>Volver A Home</button></a>
         </div>
     </main>
