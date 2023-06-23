@@ -37,7 +37,7 @@
         </ul>
     </nav>
     <main>
-        <div class="formContainer">
+        <div class="formContainer" id="confForm">
             <h2>Registro exitoso</h2>
             <a href="home.html"><button>Volver A Home</button></a>
         </div>
