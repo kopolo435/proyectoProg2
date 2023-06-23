@@ -7,6 +7,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Registro exitoso</title>
+    <link rel="stylesheet" href="style.css">
 </head>
 <body>
     <header>
@@ -61,26 +62,24 @@
      String nombre = request.getParameter("nombre"); 
      String cedula = request.getParameter("cedula");
      String fecha = request.getParameter("fecha");
-     String curso = request.getParameter("curso")
+     String curso = request.getParameter("curso");
     %>
 
     <%
     //Conexion a la base de datos
     Class.forName("com.mysql.jdbc.Driver");
-    Connection dbconect = DriverManager.getConnection("jdbc:mysql://localhost:3306/asignacion4","root","");
+    Connection dbconect = DriverManager.getConnection("jdbc:mysql://localhost:3306/solo_ciencia","root","");
     Statement dbstatement = dbconect.createStatement();
+    String insertarsql = "";
     if (curso == "Ciencias Naturales"){
-        String insertarsql = "INSERT INTO CienciasNaturales (nombre,cedula,fecha) 
-        VALUES ('"+nombre+"','"+cedula+"','"+fecha+"')";
+         insertarsql = "INSERT INTO cursos (nombre,cedula,fecha_inicio,curso) VALUES ('"+nombre+"','"+cedula+"','"+fecha+"','"+curso+"')";
     }
     else if (curso == "programacion")
     {
-        String insertarsql = "INSERT INTO Programacion (nombre,cedula,fecha) 
-        VALUES ('"+nombre+"','"+cedula+"','"+fecha+"')";
+         insertarsql = "INSERT INTO cursos (nombre,cedula,fecha_inicio,curso) VALUES ('"+nombre+"','"+cedula+"','"+fecha+"','"+curso+"')";
     }
     else{
-        String insertarsql = "INSERT INTO BioloQuimi(nombre,cedula,fecha) 
-        VALUES ('"+nombre+"','"+cedula+"','"+fecha+"')";
+         insertarsql = "INSERT INTO cursos(nombre,cedula,fecha_inicio,curso) VALUES ('"+nombre+"','"+cedula+"','"+fecha+"','"+curso+"')";
     }
     dbstatement.executeUpdate(insertarsql);
     %>

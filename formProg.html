@@ -36,7 +36,7 @@
     <main>
         <div class="formContainer">
             <h2>Registro Curso de Programacion</h2>
-            <form action="confirmacionReg.jsp" method="post">
+            <form action="confirmacionReg.jsp" method="post" id="formulario">
                 <input type="text" name="curso" id="curso" value="programacion" hidden>
                 <label for="nombre">
                     Nombre
@@ -62,7 +62,7 @@
                     </label>
                 </div>
             </form>
-            <button type="submit">Registrarse</button>
+            <button type="submit" form="formulario">Registrarse</button>
         </div>
     </main>
     <footer>
