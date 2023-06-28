@@ -2,15 +2,26 @@
     margin: 0px;
 }
 body{
-    height: 100vh;
+    position: relative;
     display: flex;
     flex-direction: column;
+    min-height: 100vh;
+    background-color: #EDF1D6;
 }
 header{
     display: flex;
     justify-content: space-between;
     padding: 10px 20px;
-    background-color: gray;
+    background-color: #40513B;
+}
+.logoContainer{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 10px;
+    width: 100px;
+    height: 100px;
+    align-content: center;
 }
 .socialContainer{
     display: flex;
@@ -18,28 +29,81 @@ header{
     align-items: flex-end;
     gap: 10px;
 }
-
+.social{
+    width: 35px;
+    height: 35px;
+}
+/*TODOS LOS SIGUIENTES NAV SON PARA EL ESTILO DEL MENú,
+El HOVER EN CADA OPCION*/
 nav {
-    padding: 10px 10px;
-    background-color: aqua;
+    background-color: #9DC08B;
+    padding: 10px;
+
 }
 
-nav ul{
-    list-style: none;
+nav ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
     display: flex;
-    gap: 20px;
-    padding: 0px;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
 }
 
-li a{
+nav li {
+    margin-right: 20px;
+    border-radius: 10px;
+    background-color: #9DC08B;
+    padding: 10px;
+    color: white;
+    font-weight: bold;
+    font-size: 20px;
+    cursor: pointer;
+    transition-duration: 0.4s;
+}
+
+nav li:hover {
+    background-color: white;
+    color: #9DC08B;
+    border-style:solid; 
+    border-width:1px; 
+    border-color:#9DC08B; 
+    box-shadow: 0px 0px 5px #9DC08B; 
+    transition-duration: 0.4s; 
+    transform: scale(1.1);
+    z-index: 1; 
+    position:relative; 
+    top:-5px; 
+    border-radius: 10px;
+
+}
+nav li a{
     text-decoration: none;
 }
-
+/*HASTA AQUI EL DISEÑO DEL MENU*/
 main{
     flex: 1;
     display: flex;
     justify-content: center;
     padding: 20px 0px;
+}
+.persona { /*ESTO ES PARA LOS DIV DE LAS PERSONAS QUE TRABAJAMOS*/
+    width: 250px;
+    padding: 20px;
+    margin: 10px;
+    background-color: #9DC08B;
+    border-radius: 10px;
+    text-align: center;
+}
+.contacto-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.imagen-tamano { /*ESTO ES PARA LAS IMAGENES DE LAS PERSONAS QUE TRABAJAMOS*/
+    width: 175px;
+    height: 200px;
 }
 
 .formContainer{
@@ -99,9 +163,14 @@ footer{
     display: flex;
     justify-content: space-between;
     padding: 10px 20px;
-    background-color: gray;
+    background-color: #40513B;
+        text-align: center;
+        color: white;
+    margin-top: auto;
 }
-
+footer a{
+    text-decoration: none;
+}
 .footerMenu{
     display: flex;
     gap: 10px;
