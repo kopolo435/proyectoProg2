@@ -6,7 +6,7 @@ body{
     display: flex;
     flex-direction: column;
     min-height: 100vh;
-    background-color: #EDF1D6;
+    background-color: #E3fcc3;
 }
 header{
     display: flex;
@@ -55,10 +55,10 @@ nav li {
     margin-right: 20px;
     border-radius: 10px;
     background-color: #9DC08B;
-    padding: 10px;
+    padding: 5px 7px;
     color: white;
     font-weight: bold;
-    font-size: 20px;
+    font-size: 16px;
     cursor: pointer;
     transition-duration: 0.4s;
 }
@@ -80,6 +80,10 @@ nav li:hover {
 }
 nav li a{
     text-decoration: none;
+}
+
+a:visited{
+    color: inherit;
 }
 /*HASTA AQUI EL DISEÑO DEL MENU*/
 main{
