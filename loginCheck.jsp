@@ -17,22 +17,22 @@
     Class.forName("com.mysql.jdbc.Driver");
     Connection dbconect = DriverManager.getConnection("jdbc:mysql://localhost:3306/solo_ciencia","root","");
     Statement dbstatement = dbconect.createStatement();
-    
 	try{
-	    PreparedStatement consultaP = dbconect.prepareStatement("SELECT * FROM usuarios WHERE NOMBRE =? AND CONTRASENA =?");
-	    consultaP.setString(1,nombre);
+	    PreparedStatement consultaP = dbconect.prepareStatement("SELECT * FROM usuarios WHERE USUARIO	 =? AND CONTRASENA =?");
+	    consultaP.setString(1,usuario);
 	    consultaP.setString(2,contrasena);
 	    
 	    ResultSet resultado = consultaP.executeQuery();
 	    if(resultado.next()){
-	    
+	    	response.sendRedirect("home.html");
 	    }
 	    else{
-	    	
+	    	out.println("Usuario incorrecto <br>");
 	    }
 		
 	}catch (Exception e){
-		
+        out.println("An error occurred: " + e.getMessage());
+        e.printStackTrace();
 	}
 	%>
 </body>
