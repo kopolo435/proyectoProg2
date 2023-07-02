@@ -12,18 +12,12 @@ body{
 header{
     display: flex;
     justify-content: space-between;
-    padding: 10px 20px;
+    padding: 0px 10px;
     background-color: #40513B;
 }
 .logoContainer{
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    gap: 10px;
     width: 150px;
     height: 150px;
-    align-content: center;
-    text-align: center;
 }
 .socialContainer{
     display: flex;
