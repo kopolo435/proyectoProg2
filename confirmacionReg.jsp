@@ -11,19 +11,18 @@
 </head>
 <body>
     <header>
-        <div class="logoContainer">
-            <img src="" alt="Logo de la Pagina">
-        </div>
+        <img src="img/Logo.png" alt="Logo de la Pagina" class="logoContainer">
         <div class="socialContainer">
-            <div class="social">
-                <img src="" alt="busqueda">
-            </div>
-            <div class="social">
-                <img src="" alt="Icono de facebook">
+            <div >
+                <a href="https://www.google.com/"><iconify-icon icon="ic:baseline-search" style="color: white;" width="45" height="45"></iconify-icon></a>
             </div>
             <div>
-                <img src="" alt="Icono de instagram">
+                <a href=""><iconify-icon icon="ri:twitter-line" style="color: white;" width="45" height="45"></iconify-icon></a>
             </div>
+            <div>
+                <a href=""><iconify-icon icon="mdi:instagram" style="color: white;" width="45" height="45"></iconify-icon></a>
+            </div>
+        </div>
         </div>
     </header>
     <nav>
