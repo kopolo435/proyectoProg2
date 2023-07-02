@@ -216,3 +216,73 @@ footer a{
     gap: 10px;
     list-style: none;
 }
+
+/* Esto es para las referencias */
+section table {
+    margin: 0 auto;
+    margin-top: 20px;
+    border-spacing: 6px;
+    margin-bottom: 20px;
+}
+
+    table td{
+    padding: 4px;
+    border-radius: 4px;
+    border: 1px solid rgb(0, 0, 0);
+    }   
+    
+    table td:empty {
+    border: none;
+    background-color: transparent;
+  }
+    table a{
+    color: black;
+    text-decoration: none;
+    padding: 10px;
+    font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif
+    }
+
+    table a:hover,a:active{
+    color: white
+    }
+      
+/*colores de la tabla*/
+table td.NoMetales{
+    background-color: rgb(215, 189, 226);
+  }
+  
+table td.Halogenos{
+    background-color: rgb(245, 183, 177);
+}
+
+table td.MetAlcalinos{
+    background-color: rgb(236, 112, 99);
+  }
+
+table td.Alcalinoterreos{
+    background-color: rgb(249, 231, 159);
+}
+table td.Alcalinoterreos1{
+    background-color: rgb(230, 126, 34);
+}
+
+table td.Metales{
+    background-color: rgb(244, 208, 63);
+}
+
+table td.Metaloides{
+    background-color: rgb(43, 138, 40);
+}
+
+table td.GasesNobles{
+    background-color: rgb(93, 173, 226);
+}
+ 
+table td.OtrosMetales{
+    background-color: rgb(208, 236, 231);
+}
+ 
+  
+  
+  
+  
