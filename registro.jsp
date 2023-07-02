@@ -53,7 +53,7 @@
         </ul>
         <p>Mensaje de copyright</p>
         <div class="logoutContainer">
-            <a href="">Logout</a>
+            <a href="LoginRegister.html">Logout</a>
         </div>
     </footer>
 
