@@ -6,8 +6,12 @@
 <head>
 <meta charset="ISO-8859-1">
 <title>Insert title here</title>
+<link rel="stylesheet" href="style.css">
+  <link rel="stylesheet" href="login.css" />
+  <link rel="icon" href="img/ICON.ico">
 </head>
 <body>
+  <center><img src="img/Logo.png" alt="Logo de SOLOCIENCIA" class="logo"></center>
 	<main>
         <div class="formContainer" id="confForm">
             <h2>Error al intentar iniciar sesion, intentelo de nuevo</h2>
@@ -17,7 +21,7 @@
     </main>
 
 	<%
-		String nombre = request.getParameter("nombre");
+		String usuario = request.getParameter("usuario");
 		String contrasena = request.getParameter("contrasena");
 	%>
 	
@@ -33,9 +37,6 @@
 	    ResultSet resultado = consultaP.executeQuery();
 	    if(resultado.next()){
 	    	response.sendRedirect("home.html");
-	    }
-	    else{
-	    	out.println("Usuario incorrecto <br>");
 	    }
 		
 	}catch (Exception e){
