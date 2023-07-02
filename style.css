@@ -269,7 +269,22 @@ table td.OtrosMetales{
 table td.OtrosMetales:hover, td.OtrosMetales:active{
     background-color: #031FA2;
   }
- 
+  .button-container {
+    display: flex;
+    justify-content: center;
+    margin-bottom: 20px; /* Ajusta el margen inferior según sea necesario */
+  }
+  
+  .boton-home {
+    background-color: #9DC08B;
+    color: #333;
+    padding: 10px 20px;
+    text-decoration: none;
+    border-radius: 5px;
+  }
+  
+  
+
   
   
   
