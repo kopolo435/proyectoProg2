@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <title>SOLOCIENCIA</title>
+  <link rel="stylesheet" href="login.css" />
+  <link rel="icon" href="ICON.ico">
+</head>
+<body>
+  <center><img src="img/Logo.png" alt="Logo de SOLOCIENCIA" class="logo"></center>
+  <div class="container">
+    <div class="login-form">
+        <div class="login-box">
+            <h1>Iniciar sesión</h1>
+            <form action="loginCheck.jsp">
+              <label>Usuario</label>
+              <input type="text" placeholder="Usuario" />
+              <label>Contraseña</label>
+              <input type="password" placeholder="********" />
+              <input type="submit" value="Enviar">
+            </form>
+            <p>¿No tienes una cuenta? <button class="toggle-btn">Registro</button></p>
+          </div>
+    </div>
+    <div class="register-form">
+        <div class="signup-box">
+            <h1>Registro</h1>
+            <form >
+              <label>Nombre</label>
+              <input type="text" placeholder="Nombre" />
+              <label>Apellido</label>
+              <input type="text" placeholder="Apellido" />
+              <label>Edad</label>
+              <input type="number" min="1" placeholder="Edad" />
+              <label>Contraseña</label>
+              <input type="password" placeholder="********" />
+              <label>Usuario</label>
+              <input type="" placeholder="" />
+              <input type="submit" value="Enviar">
+            </form>
+            <p>¿Ya tienes una cuenta? <button class="toggle-btn">Iniciar sesión</button></p>
+          </div>
+    </div>
+  </div>
+  <script>
+    const loginForm = document.querySelector('.login-form');
+    const registerForm = document.querySelector('.register-form');
+    const toggleBtns = document.querySelectorAll('.toggle-btn');
+
+    // Ocultar formulario de registro al cargar la página
+    registerForm.style.display = 'none';
+
+    // Alternar entre formularios al hacer clic en los botones 
+    toggleBtns.forEach(btn => {
+      btn.addEventListener('click', () => {
+        loginForm.style.display = loginForm.style.display === 'none' ? 'block' : 'none';
+        registerForm.style.display = registerForm.style.display === 'none' ? 'block' : 'none';
+      });
+    });
+  </script>
+<!--El formulario de registro tiene la propiedad de visualización (display),establecida en "none" 
+    para ocultarlo inicialmente.
+En el archivo JavaScript (dentro de la etiqueta <script> en el archivo HTML), hemos utilizado 
+    JavaScript para agregar la funcionalidad de alternar entre los formularios.
+Primero, seleccionamos los elementos relevantes utilizando document.querySelector y 
+document.querySelectorAll. Utilizamos la clase CSS para seleccionar el formulario 
+de inicio de sesión (.login-form), el formulario de registro (.register-form) y 
+los botones de alternancia (.toggle-btn).
+A continuación, ocultamos el formulario de registro estableciendo su propiedad de visualización 
+en "none" en el momento de cargar la página.
+Luego, agregamos un evento de clic a cada botón de alternancia utilizando un bucle forEach 
+en los elementos seleccionados con la clase "toggle-btn". 
+Cuando se hace clic en un botón de alternancia, se ejecuta una función.
+En la función, alternamos la visualización de los formularios de inicio de sesión y 
+registro utilizando la propiedad de visualización. Si el formulario de inicio de sesión 
+está oculto, lo mostramos estableciendo su propiedad de visualización en "block". 
+Y si el formulario de registro está oculto, lo mostramos estableciendo su propiedad de 
+visualización en "block". De esta manera, los formularios se alternan al hacer clic en 
+los botones de alternancia.
+    -->
+</body>
+</html>

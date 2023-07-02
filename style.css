@@ -2,35 +2,6 @@
     margin: 0;
     padding: 0;
 }
-.hero{
-    height: 100%;
-    width: 100%;
-    background-color: #EDF1D6;
-}
-.form-box{
-    width: 380px;
-    height: 480px;
-    position: relative;
-    margin: 6% auto;
-    background: #9DC08B;
-    padding: 5px;
-}
-.button-box{
-    width: 220px;
-    max-width: 35px auto;
-    position: relative;
-    box-shadow: 0 0 20px 9px #40513B;
-    border-radius: 30px;
-}
-.toggle-btn{
-    padding:  10pz 30px;
-    cursor: pointer;
-    background: transparent;
-    border: 0;
-    outline: none;
-    position: relative;
-    
-}
 body{
     position: relative;
     display: flex;
@@ -49,19 +20,17 @@ header{
     justify-content: center;
     align-items: center;
     gap: 10px;
-    width: 100px;
-    height: 100px;
+    width: 150px;
+    height: 150px;
     align-content: center;
+    text-align: center;
 }
 .socialContainer{
     display: flex;
     justify-content: flex-start;
     align-items: flex-end;
     gap: 10px;
-}
-.social{
-    width: 35px;
-    height: 35px;
+    text-align: right;
 }
 /*TODOS LOS SIGUIENTES NAV SON PARA EL ESTILO DEL MENú,
 El HOVER EN CADA OPCION*/
@@ -210,13 +179,14 @@ footer{
 }
 footer a{
     text-decoration: none;
+    color:inherit;
+
 }
 .footerMenu{
     display: flex;
     gap: 10px;
     list-style: none;
 }
-
 /* Esto es para las referencias */
 section table {
     margin: 0 auto;
@@ -224,7 +194,10 @@ section table {
     border-spacing: 6px;
     margin-bottom: 20px;
 }
-
+h1{
+    display: flex;
+    justify-content: center;
+}
     table td{
     padding: 4px;
     border-radius: 4px;
@@ -243,46 +216,60 @@ section table {
     }
 
     table a:hover,a:active{
-    color: white
+    color: white;
     }
       
 /*colores de la tabla DE REFERENCIAS*/
 table td.NoMetales{
     background-color: rgb(215, 189, 226);
   }
-  
+table td.NoMetales:hover, td.NoMetales:active{
+    background-color: #031FA2;
+  }
 table td.Halogenos{
     background-color: rgb(245, 183, 177);
 }
-
+table td.Halogenos:hover, td.Halogenos:active{
+    background-color: #031FA2;
+  }
 table td.MetAlcalinos{
     background-color: rgb(236, 112, 99);
   }
-
+  table td.MetAlcalinos:hover, td.MetAlcalinos:active{
+    background-color: #031FA2;
+  }
 table td.Alcalinoterreos{
     background-color: rgb(249, 231, 159);
 }
-table td.Alcalinoterreos1{
-    background-color: rgb(230, 126, 34);
-}
+table td.Alcalinoterreos:hover, td.Alcalinoterreos:active{
+    background-color: #031FA2;
+  }
 
 table td.Metales{
     background-color: rgb(244, 208, 63);
 }
-
+table td.Metales:hover, td.Metales:active{
+    background-color: #031FA2;
+  }
 table td.Metaloides{
     background-color: rgb(43, 138, 40);
 }
-
+table td.Metaloides:hover, td.Metaloides:active{
+    background-color: #031FA2;
+  }
 table td.GasesNobles{
     background-color: rgb(93, 173, 226);
 }
- 
+table td.GasesNobles:hover, td.GasesNobles:active{
+    background-color: #031FA2;
+  }
 table td.OtrosMetales{
     background-color: rgb(208, 236, 231);
 }
+table td.OtrosMetales:hover, td.OtrosMetales:active{
+    background-color: #031FA2;
+  }
  
-  
   
   
   
