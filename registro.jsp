@@ -72,7 +72,7 @@ try {
     Class.forName("com.mysql.jdbc.Driver");
     Connection dbconect = DriverManager.getConnection("jdbc:mysql://localhost:3306/solo_ciencia","root","");
     Statement dbstatement = dbconect.createStatement();
-    String insertarsql = "INSERT INTO usuarios(usuario,nombre,apellido,edad,contrasena) VALUES ('"+nombre+"','"+apellido+"','"+edad+"','"+contrasena+"','"+usuario+"')";
+    String insertarsql = "INSERT INTO usuarios(usuario,nombre,apellido,edad,contrasena) VALUES ('"+usuario+"','"+nombre+"','"+apellido+"','"+edad+"','"+contrasena+"')";
     
     // inserta los datos
     dbstatement.executeUpdate(insertarsql);
