@@ -8,6 +8,14 @@
 <title>Insert title here</title>
 </head>
 <body>
+	<main>
+        <div class="formContainer" id="confForm">
+            <h2>Error al intentar iniciar sesion, intentelo de nuevo</h2>
+            <img src="./img/survey.png" alt="imagen de confirmacion">
+            <a href="LoginRegister.html"><button>Volver a login</button></a>
+        </div>
+    </main>
+
 	<%
 		String nombre = request.getParameter("nombre");
 		String contrasena = request.getParameter("contrasena");
