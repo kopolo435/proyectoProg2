@@ -11,11 +11,11 @@
     <div class="login-form">
         <div class="login-box">
             <h1>Iniciar sesión</h1>
-            <form action="loginCheck.jsp">
+            <form action="loginCheck.jsp" method="post">
               <label>Usuario</label>
-              <input type="text" placeholder="Usuario" />
+              <input type="text" placeholder="Usuario" name="usuario" />
               <label>Contraseña</label>
-              <input type="password" placeholder="********" />
+              <input type="password" placeholder="********" name="contrasena" />
               <input type="submit" value="Enviar">
             </form>
             <p>¿No tienes una cuenta? <button class="toggle-btn">Registro</button></p>
@@ -24,17 +24,17 @@
     <div class="register-form">
         <div class="signup-box">
             <h1>Registro</h1>
-            <form >
+            <form action="registro.jsp" method="post">
               <label>Nombre</label>
-              <input type="text" placeholder="Nombre" />
+              <input type="text" placeholder="Nombre" name="nombre" />
               <label>Apellido</label>
-              <input type="text" placeholder="Apellido" />
+              <input type="text" placeholder="Apellido" name="apellido"/>
               <label>Edad</label>
-              <input type="number" min="1" placeholder="Edad" />
-              <label>Contraseña</label>
-              <input type="password" placeholder="********" />
+              <input type="number" min="1" placeholder="Edad" name="edad"/>
+              <label>Contrasena</label>
+              <input type="password" placeholder="********" name="contrasena"/>
               <label>Usuario</label>
-              <input type="" placeholder="" />
+              <input type="text" placeholder="" name="usuario"/>
               <input type="submit" value="Enviar">
             </form>
             <p>¿Ya tienes una cuenta? <button class="toggle-btn">Iniciar sesión</button></p>

@@ -2,13 +2,12 @@
     pageEncoding="ISO-8859-1"%>
 <%@page import="java.sql.*" %>
 <!DOCTYPE html>
-<html lang="en">
+<html>
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Registro exitoso</title>
-    <link rel="stylesheet" href="style.css">
-    <link rel="icon" href="img/ICON.ico">
+	<meta charset="ISO-8859-1">
+	<title>Registro exitoso</title>
+	<link rel="stylesheet" href="style.css">
+	<link rel="icon" href="img/ICON.ico">
 </head>
 <body>
     <header>
@@ -30,59 +29,62 @@
         <ul class="mainMenu">
             <li><a href="home.html">Home</a></li>
             <li><a href="formNatural.html">Registrarse en el Curso de Ciencias Naturales</a></li>
-            <li><a href="formQuiBio.html">Registrarse en el Curso de Química y Biología</a></li>
-            <li><a href="formProg.html">Registrarse en el Curso de programación</a></li>
+            <li><a href="formQuiBio.html">Registrarse en el Curso de Quimica y Biología</a></li>
+            <li><a href="formProg.html">Registrarse en el Curso de programacion</a></li>
             <li><a href="">Referencias</a></li>
-            <li><a href="">Contáctanos</a></li>
+            <li><a href="">Contactanos</a></li>
         </ul>
     </nav>
     <main>
         <div class="formContainer" id="confForm">
             <h2>Registro exitoso</h2>
             <img src="./img/survey.png" alt="imagen de confirmacion">
-            <a href="home.html"><button>Volver A Home</button></a>
+            <a href="home.html"><button>Ingresar A Home</button></a>
         </div>
     </main>
     <footer>
         <ul class="footerMenu">
             <li><a href="home.html">Home</a></li>
             <li><a href="formNatural.html">Registrarse en el Curso de Ciencias Naturales</a></li>
-            <li><a href="formQuiBio.html">Registrarse en el Curso de Química y Biología</a></li>
-            <li><a href="formProg.html">Registrarse en el Curso de programación</a></li>
+            <li><a href="formQuiBio.html">Registrarse en el Curso de Quimica y Biología</a></li>
+            <li><a href="formProg.html">Registrarse en el Curso de programacion</a></li>
             <li><a href="">Referencias</a></li>
-            <li><a href="">Contáctanos</a></li>
+            <li><a href="">Contactanos</a></li>
         </ul>
         <p>Mensaje de copyright</p>
         <div class="logoutContainer">
-            <a href="">Logout</a>
+            <a href="LoginRegister.html">Logout</a>
         </div>
     </footer>
 
     <%
     //Declaracion y asignacion de valores a variables que reciben datos del formulario
      String nombre = request.getParameter("nombre"); 
-     String cedula = request.getParameter("cedula");
-     String fecha = request.getParameter("fecha");
-     String curso = request.getParameter("curso");
+     String apellido = request.getParameter("apellido");
+     String edad = request.getParameter("edad");
+     String contrasena = request.getParameter("contrasena");
+     String usuario = request.getParameter("usuario");
     %>
 
-    <%
+<%
+try {
     //Conexion a la base de datos
     Class.forName("com.mysql.jdbc.Driver");
     Connection dbconect = DriverManager.getConnection("jdbc:mysql://localhost:3306/solo_ciencia","root","");
     Statement dbstatement = dbconect.createStatement();
-    String insertarsql = "";
-    if (curso == "Ciencias Naturales"){
-         insertarsql = "INSERT INTO cursos (nombre,cedula,fecha_inicio,curso) VALUES ('"+nombre+"','"+cedula+"','"+fecha+"','"+curso+"')";
-    }
-    else if (curso == "programacion")
-    {
-         insertarsql = "INSERT INTO cursos (nombre,cedula,fecha_inicio,curso) VALUES ('"+nombre+"','"+cedula+"','"+fecha+"','"+curso+"')";
-    }
-    else{
-         insertarsql = "INSERT INTO cursos(nombre,cedula,fecha_inicio,curso) VALUES ('"+nombre+"','"+cedula+"','"+fecha+"','"+curso+"')";
-    }
+    String insertarsql = "INSERT INTO usuarios(usuario,nombre,apellido,edad,contrasena) VALUES ('"+nombre+"','"+apellido+"','"+edad+"','"+contrasena+"','"+usuario+"')";
+    
+    // inserta los datos
     dbstatement.executeUpdate(insertarsql);
-    %>
+    
+    // cierra la conexion
+    dbstatement.close();
+    dbconect.close();
+} catch (Exception e) {
+    // Muestra mensaje de error
+    e.printStackTrace();
+}
+%>
+
 </body>
 </html>
