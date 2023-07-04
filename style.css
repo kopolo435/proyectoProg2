@@ -7,7 +7,8 @@ body{
     display: flex;
     flex-direction: column;
     min-height: 100vh;
-    background-color: #EDF1D6;
+    background-color: #E3FCC3;
+    font-family: "Roboto", sans-serif;
 }
 header{
     display: flex;
@@ -25,6 +26,9 @@ header{
     align-items: flex-end;
     gap: 10px;
     text-align: right;
+}
+h2 {
+    font-size: 20px;
 }
 /*TODOS LOS SIGUIENTES NAV SON PARA EL ESTILO DEL MENú,
 El HOVER EN CADA OPCION*/
@@ -84,6 +88,23 @@ nav a{
     text-decoration: none;
 }
 /*HASTA AQUI EL DISEÑO DEL MENU*/
+
+/*Formato de las divisiones de las noticias de la pagina Home*/
+.noticiasHome {
+    padding: 20px;
+    margin: 20px;
+    background-color: #9DC08B;
+    border-radius: 10px;
+    text-align: justify;
+    overflow: auto;
+    transition: transform 0.3s ease;
+}
+
+.noticiasHome:hover { /*Animacion cuando se pasa por la noticia*/
+  transform: translateY(-5px);
+}
+/*Hasta aqui el formato de las divisiones de las noticias de la pagina Home*/
+
 main{
     flex: 1;
     display: flex;
