@@ -39,7 +39,7 @@
         <div class="formContainer" id="confForm">
             <h2>Registro exitoso</h2>
             <img src="./img/survey.png" alt="imagen de confirmacion">
-            <a href="home.html"><button>Ingresar A Home</button></a>
+            <a href="home.html"><button>Ingresar A login para logearse</button></a>
         </div>
     </main>
     <footer>
@@ -80,6 +80,7 @@ try {
     // cierra la conexion
     dbstatement.close();
     dbconect.close();
+    response.sendRedirect("LoginRegister.html");
 } catch (Exception e) {
     // Muestra mensaje de error
     e.printStackTrace();

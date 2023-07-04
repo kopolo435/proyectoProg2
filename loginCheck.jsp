@@ -14,9 +14,9 @@
   <center><img src="img/Logo.png" alt="Logo de SOLOCIENCIA" class="logo"></center>
 	<main>
         <div class="formContainer" id="confForm">
-            <h2>Error al intentar iniciar sesion, intentelo de nuevo</h2>
+            <h2>Error al intentar iniciar sesion</h2>
             <img src="./img/survey.png" alt="imagen de confirmacion">
-            <a href="LoginRegister.html"><button>Volver a login</button></a>
+            <a href="LoginRegister.html"><button>Volver a login o a registrarse</button></a>
         </div>
     </main>
 

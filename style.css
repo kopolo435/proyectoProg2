@@ -27,8 +27,14 @@ header{
     gap: 10px;
     text-align: right;
 }
-h2 {
-    font-size: 20px;
+
+h1,h2,h3,h4{
+	font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+	font-size:30px;
+}
+
+.noticiasHome h2{
+	font-size: 20px;
 }
 /*TODOS LOS SIGUIENTES NAV SON PARA EL ESTILO DEL MENú,
 El HOVER EN CADA OPCION*/
@@ -160,6 +166,10 @@ form label{
     display: flex;
     flex-direction: column;
     gap: 5px;
+}
+
+form{
+	font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
 }
 
 form input{
