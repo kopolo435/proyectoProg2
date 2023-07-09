@@ -127,8 +127,8 @@ main{
 }
 .contacto-container {
     display: flex;
-    justify-content: center;
-    align-items: center;
+    justify-content: space-between;
+    align-items: flex-start;
 }
 .imagen-tamano { /*ESTO ES PARA LAS IMAGENES DE LAS PERSONAS QUE TRABAJAMOS*/
     width: 175px;
