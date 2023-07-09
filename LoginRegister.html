@@ -4,17 +4,18 @@
   <title>SOLOCIENCIA</title>
   <link rel="stylesheet" href="login.css" />
   <link rel="icon" href="ICON.ico">
+  <meta charset="UTF-8">
 </head>
 <body>
   <center><img src="img/Logo.png" alt="Logo de SOLOCIENCIA" class="logo"></center>
   <div class="container">
     <div class="login-form">
         <div class="login-box">
-            <h1>Iniciar sesión</h1>
+            <h1>Iniciar sesion</h1>
             <form action="loginCheck.jsp" method="post">
               <label>Usuario</label>
               <input type="text" placeholder="Usuario" name="usuario" />
-              <label>Contraseña</label>
+              <label>Contrasena</label>
               <input type="password" placeholder="********" name="contrasena" />
               <input type="submit" value="Enviar">
             </form>
@@ -37,7 +38,7 @@
               <input type="text" placeholder="" name="usuario"/>
               <input type="submit" value="Enviar">
             </form>
-            <p>¿Ya tienes una cuenta? <button class="toggle-btn">Iniciar sesión</button></p>
+            <p>¿Ya tienes una cuenta? <button class="toggle-btn">Iniciar sesion</button></p>
           </div>
     </div>
   </div>
@@ -46,7 +47,7 @@
     const registerForm = document.querySelector('.register-form');
     const toggleBtns = document.querySelectorAll('.toggle-btn');
 
-    // Ocultar formulario de registro al cargar la página
+    // Ocultar formulario de registro al cargar la pÃ¡gina
     registerForm.style.display = 'none';
 
     // Alternar entre formularios al hacer clic en los botones 

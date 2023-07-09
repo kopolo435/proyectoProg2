@@ -8,6 +8,7 @@
 	<title>Registro exitoso</title>
 	<link rel="stylesheet" href="style.css">
 	<link rel="icon" href="img/ICON.ico">
+	<meta charset="UTF-8">
 </head>
 <body>
     <header>
