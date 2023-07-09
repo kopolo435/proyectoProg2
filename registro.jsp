@@ -30,7 +30,7 @@
         <ul class="mainMenu">
             <li><a href="home.html">Home</a></li>
             <li><a href="formNatural.html">Registrarse en el Curso de Ciencias Naturales</a></li>
-            <li><a href="formQuiBio.html">Registrarse en el Curso de Quimica y Biología</a></li>
+            <li><a href="formQuiBio.html">Registrarse en el Curso de Quimica y Biologia</a></li>
             <li><a href="formProg.html">Registrarse en el Curso de programacion</a></li>
             <li><a href="">Referencias</a></li>
             <li><a href="">Contactanos</a></li>
@@ -47,7 +47,7 @@
         <ul class="footerMenu">
             <li><a href="home.html">Home</a></li>
             <li><a href="formNatural.html">Registrarse en el Curso de Ciencias Naturales</a></li>
-            <li><a href="formQuiBio.html">Registrarse en el Curso de Quimica y Biología</a></li>
+            <li><a href="formQuiBio.html">Registrarse en el Curso de Quimica y Biologia</a></li>
             <li><a href="formProg.html">Registrarse en el Curso de programacion</a></li>
             <li><a href="">Referencias</a></li>
             <li><a href="">Contactanos</a></li>
