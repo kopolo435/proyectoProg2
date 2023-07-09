@@ -50,7 +50,7 @@
             <li><a href="formQuiBio.html">Registrarse en el Curso de Química y Biología</a></li>
             <li><a href="formProg.html">Registrarse en el Curso de programación</a></li>
             <li><a href="">Referencias</a></li>
-            <li><a href="">Contáctanos</a></li>
+            <li><a href="">Contactanos</a></li>
         </ul>
         <p>Mensaje de copyright</p>
         <div class="logoutContainer">
@@ -73,14 +73,14 @@
     Statement dbstatement = dbconect.createStatement();
     String insertarsql = "";
     if (curso == "Ciencias Naturales"){
-         insertarsql = "INSERT INTO cursos (nombre,cedula,fecha_inicio,curso) VALUES ('"+nombre+"','"+cedula+"','"+fecha+"','"+curso+"')";
+         insertarsql = "INSERT INTO datonaturales(nombre,cedula,fecha_inicio,curso) VALUES ('"+nombre+"','"+cedula+"','"+fecha+"','"+curso+"')";
     }
     else if (curso == "programacion")
     {
-         insertarsql = "INSERT INTO cursos (nombre,cedula,fecha_inicio,curso) VALUES ('"+nombre+"','"+cedula+"','"+fecha+"','"+curso+"')";
+         insertarsql = "INSERT INTO datosprog(nombre,cedula,fecha_inicio,curso) VALUES ('"+nombre+"','"+cedula+"','"+fecha+"','"+curso+"')";
     }
     else{
-         insertarsql = "INSERT INTO cursos(nombre,cedula,fecha_inicio,curso) VALUES ('"+nombre+"','"+cedula+"','"+fecha+"','"+curso+"')";
+         insertarsql = "INSERT INTO datosqui_bio(nombre,cedula,fecha_inicio,curso) VALUES ('"+nombre+"','"+cedula+"','"+fecha+"','"+curso+"')";
     }
     dbstatement.executeUpdate(insertarsql);
     %>
