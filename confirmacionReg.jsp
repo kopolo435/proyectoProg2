@@ -18,10 +18,10 @@
                 <a href="https://www.google.com/"><iconify-icon icon="ic:baseline-search" style="color: white;" width="45" height="45"></iconify-icon></a>
             </div>
             <div>
-                <a href=""><iconify-icon icon="ri:twitter-line" style="color: white;" width="45" height="45"></iconify-icon></a>
+                <a href="https://twitter.com/solociencia_01?t=nWcv_JfVLpWt4TRDcfz8Qg&s=09"><iconify-icon icon="ri:twitter-line" style="color: white;" width="45" height="45"></iconify-icon></a>
             </div>
             <div>
-                <a href=""><iconify-icon icon="mdi:instagram" style="color: white;" width="45" height="45"></iconify-icon></a>
+                <a href="https://www.instagram.com/solociencia_01/"><iconify-icon icon="mdi:instagram" style="color: white;" width="45" height="45"></iconify-icon></a>
             </div>
         </div>
         </div>
@@ -32,8 +32,8 @@
             <li><a href="formNatural.html">Registrarse en el Curso de Ciencias Naturales</a></li>
             <li><a href="formQuiBio.html">Registrarse en el Curso de Quimica y Biologia</a></li>
             <li><a href="formProg.html">Registrarse en el Curso de programacion</a></li>
-            <li><a href="">Referencias</a></li>
-            <li><a href="">Contactanos</a></li>
+            <li><a href="Referencias.html">Referencias</a></li>
+            <li><a href="Conocenos.html">Contáctanos</a></li>
         </ul>
     </nav>
     <main>
@@ -49,8 +49,8 @@
             <li><a href="formNatural.html">Registrarse en el Curso de Ciencias Naturales</a></li>
             <li><a href="formQuiBio.html">Registrarse en el Curso de Quimica y Biologia</a></li>
             <li><a href="formProg.html">Registrarse en el Curso de programacion</a></li>
-            <li><a href="">Referencias</a></li>
-            <li><a href="">Contactanos</a></li>
+            <li><a href="Referencias.html">Referencias</a></li>
+            <li><a href="Conocenos.html">Contáctanos</a></li>
         </ul>
         <p>Mensaje de copyright</p>
         <div class="logoutContainer">
@@ -72,7 +72,7 @@
     Connection dbconect = DriverManager.getConnection("jdbc:mysql://localhost:3306/solo_ciencia","root","");
     Statement dbstatement = dbconect.createStatement();
     String insertarsql = "";
-    if (curso.equals("Ciencias Naturales")){
+    if (curso.equals("Ciencias Naturales")){ 
          insertarsql = "INSERT INTO datonaturales(nombre,cedula,fecha_inicio) VALUES ('"+nombre+"','"+cedula+"','"+fecha+"')";
     }
     else if (curso.equals("programacion"))
