@@ -2,7 +2,7 @@
     pageEncoding="ISO-8859-1"%>
 <%@page import="java.sql.*" %>
 <!DOCTYPE html>
-<html>
+<html lang="en">
 <head>
 <meta charset="ISO-8859-1">
 <title>Insert title here</title>
@@ -12,8 +12,8 @@
 </head>
 <body>
 	<div class="logocenter" id="center">
-	<img src="img/Logo.png" alt="Logo de SOLOCIENCIA" class="logo">
-	</div>
+		<img src="img/Logo.png" alt="Logo de SOLOCIENCIA" class="logo">
+	  </div>
 	<main>
         <div class="formContainer" id="confForm">
             <h2>Error al intentar iniciar sesion</h2>
