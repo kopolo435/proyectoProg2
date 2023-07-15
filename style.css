@@ -41,6 +41,10 @@ h1,h2,h3,h4{
 .noticiasHome h2{
 	font-size: 20px;
 }
+
+iframe{
+    border: none;
+}
 /*TODOS LOS SIGUIENTES NAV SON PARA EL ESTILO DEL MENú,
 El HOVER EN CADA OPCION*/
 nav {
