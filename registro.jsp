@@ -2,7 +2,7 @@
     pageEncoding="ISO-8859-1"%>
 <%@page import="java.sql.*" %>
 <!DOCTYPE html>
-<html>
+<html lang="es">
 <head>
 	<meta charset="ISO-8859-1">
 	<title>Registro exitoso</title>
