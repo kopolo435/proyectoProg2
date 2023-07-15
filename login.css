@@ -71,6 +71,10 @@
     height: 250px;
     align-content: center; 
   }
+.logocenter{
+    display: flex;
+    justify-content: center;
+  }
 .toggle-btn{
   top: 0;
   left: 0;
