@@ -11,7 +11,9 @@
   <link rel="icon" href="img/ICON.ico">
 </head>
 <body>
-	<div class="logocenter"><img src="img/Logo.png" alt="Logo de SOLOCIENCIA" class="logo"></div>
+	<div class="logocenter" id="center">
+	<img src="img/Logo.png" alt="Logo de SOLOCIENCIA" class="logo">
+	</div>
 	<main>
         <div class="formContainer" id="confForm">
             <h2>Error al intentar iniciar sesion</h2>
