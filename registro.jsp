@@ -24,7 +24,6 @@
                 <a href="https://www.instagram.com/solociencia_01/"><iconify-icon icon="mdi:instagram" style="color: white;" width="45" height="45"></iconify-icon></a>
             </div>
         </div>
-        </div>
     </header>
     <nav>
         <ul class="mainMenu">

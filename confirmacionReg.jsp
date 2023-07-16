@@ -24,7 +24,6 @@
                 <a href="https://www.instagram.com/solociencia_01/"><iconify-icon icon="mdi:instagram" style="color: white;" width="45" height="45"></iconify-icon></a>
             </div>
         </div>
-        </div>
     </header>
     <nav>
         <ul class="mainMenu">
@@ -33,7 +32,7 @@
             <li><a href="formQuiBio.html">Registrarse en el Curso de Quimica y Biologia</a></li>
             <li><a href="formProg.html">Registrarse en el Curso de programacion</a></li>
             <li><a href="Referencias.html">Referencias</a></li>
-            <li><a href="Conocenos.html">Contáctanos</a></li>
+            <li><a href="Conocenos.html">Contï¿½ctanos</a></li>
         </ul>
     </nav>
     <main>
@@ -50,7 +49,7 @@
             <li><a href="formQuiBio.html">Registrarse en el Curso de Quimica y Biologia</a></li>
             <li><a href="formProg.html">Registrarse en el Curso de programacion</a></li>
             <li><a href="Referencias.html">Referencias</a></li>
-            <li><a href="Conocenos.html">Contáctanos</a></li>
+            <li><a href="Conocenos.html">Contï¿½ctanos</a></li>
         </ul>
         <p>Mensaje de copyright</p>
         <div class="logoutContainer">
